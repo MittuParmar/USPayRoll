@@ -10,6 +10,13 @@
 
 	<center>
 		<h1>welcome : <%=request.getAttribute("uid")%></h1>
+		<%
+			if(request.getAttribute("status")!=null){
+		%>
+			<h2><%=request.getAttribute("status")%></h2>
+		<%
+			}
+		%>
 		<a href="Add">Add</a>
 		<a href="Show">Show</a>
 		<a href="Update">Update</a>
